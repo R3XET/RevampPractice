@@ -1,0 +1,5 @@
+name: RevampPractice
+author: R3XET
+version: "1.0"
+main: eu.revamp.practice.RevampPractice
+depend: [ProtocolLib]

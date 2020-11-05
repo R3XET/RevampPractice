@@ -1,0 +1,469 @@
+KEY: ""
+
+mongo:
+  ip: localhost
+  port: 27017
+  database: database
+  use-password: true
+  username: username
+  password: password
+
+scoreboard:
+  enabled: true
+  LOBBY:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bOnline&7: &f%online%'
+      - '&bIn Fights&7: &f%fighting%'
+      - '&bIn Queues&7: &f%queueing%'
+      - '&7&m--------------------'
+  RANKED-QUEUE:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bOnline: &f%online%'
+      - '&bIn Fights&7: &f%fighting%'
+      - '&bIn Queues&7: &f%queueing%'
+      - '&7&m--------------------'
+      - '&aRanked %kit%'
+      - '&fTime&7: &b%time%'
+      - '&fSearching&7: &b%minElo% - %maxElo%'
+      - '&7&m--------------------'
+  UNRANKED-QUEUE:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bOnline&7: &f%online%'
+      - '&bIn Fights&7: &f%fighting%'
+      - '&bIn Queues&7: &f%queueing%'
+      - '&7&m--------------------'
+      - '&aUnranked %kit%'
+      - '&fTime&7: &b%time%'
+      - '&7&m--------------------'
+  UNRANKED-MATCH:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&a&lOpponent&7: &f%opponent%'
+      - '&f&lUnranked %kit%'
+      - '&bPing&7: &f%ping% ms&7 %splitter% &f%opponentPing% ms'
+      - '&bDuration&7: &f%time%'
+      - '&7&m--------------------'
+  RANKED-MATCH:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&a&lOpponent&7: &f%opponent%'
+      - '&4&lRanked %kit%'
+      - '&6ELO&7: &f%elo% &7 %splitter% &f%opponentElo%'
+      - '&bPing&7: &f%ping% ms&7 %splitter% &f%opponentPing% ms'
+      - '&bDuration&7: &f%time%'
+      - '&7&m--------------------'
+  SPECTATING:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&b%player1%'
+      - '&avs'
+      - '&c%player2%'
+      - '&7&m--------------------'
+  EDITING:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bEditing Kit&7:&f %kit%'
+      - '&7&m--------------------'
+  PARTY-LOBBY:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bOnline&7: &f%online%'
+      - '&bIn Fights&7: &f%fighting%'
+      - '&bIn Queues&7: &f%queueing%'
+      - '&7&m--------------------'
+      - '&bLeader&7: &f%leader%'
+      - '&bMembers&7: &f%members%'
+      - '&7&m--------------------'
+  PARTY-MATCH:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bTeam&7: &f%alive%/%all%'
+      - '&2&lOpponents&7:&f %opponentAlive%/%opponentAll%'
+      - '&bDuration&7: &f%time%'
+      - '&7&m--------------------'
+  PARTY-MATCH-FFA:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bAlive&7: &f%alive%/%all%'
+      - '&bDuration&7: &f%time%'
+      - '&7&m--------------------'
+  PARTY-MATCH-BARD:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bTeam&7: &f%alive%/%all%'
+      - '&2&lOpponents&7:&f %opponentAlive%/%opponentAll%'
+      - '&bBard Energy:&f %energy%'
+      - '&bDuration&7: &f%time%'
+      - '&7&m--------------------'
+  #//TODO FINISH
+  SUMO-EVENT-STARTING:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bEvent&7: &fSumo'
+      - '&bPlayers&7: &f%players%/%max%'
+      - '&bStarting&7: &f%time%'
+      - '&7&m--------------------'
+  SUMO-EVENT-STARTED:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&bEvent&7: &fSumo'
+      - '&a&lOpponent&7: &f%opponent%'
+      - '&bPing&7: &f%ping% ms&7 %splitter% &f%opponentPing% ms'
+      - '&bDuration&7: &f%time%'
+      - '&7&m--------------------'
+#//TODO FINISH
+  TOURNAMENT-STARTING:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&f&lTournament'
+      - ' &7* &bKit&7: &f%kit%'
+      - ' &7* &bPlayers&7: &f%players%/%max%'
+      - ' &7* &bStarting&7: &f%time%'
+      - '&7&m--------------------'
+  TOURNAMENT-STARTED:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&f&lTournament'
+      - ' &7* &bKit&7: &f%kit%'
+      - ' &7* &bPlayers&7: &f%players%/%max%'
+      - ' &7* &bRound&7: &f%round%'
+      - ' &7* &bDuration&7: &f%time%'
+      - '&7&m--------------------'
+  TOURNAMENT-WAITING:
+    title: '&3&lRevamp &7%splitter% &9Practice'
+    slots:
+      - '&7&m--------------------'
+      - '&f&lTournament'
+      - ' &7* &bKit&7: &f%kit%'
+      - ' &7* &bPlayers&7: &f%players%/%max%'
+      - ' &7* &bRound&7: &f%round%'
+      - ' &7* &bStarting&7: &f%time%'
+      - '&7&m--------------------'
+items:
+  UNRANKED:
+    id: '267:0'
+    name: '&aJoin an Unranked Queue'
+    slot: 0
+    lore-enabled: true
+    lore:
+      - '&7Right Click to open the Unranked GUI'
+  RANKED:
+    id: '276:0'
+    name: '&bJoin a Ranked Queue'
+    slot: 1
+    lore-enabled: true
+    lore:
+      - '&7Right Click to open the Ranked GUI'
+  PARTY:
+    id: '399:0'
+    name: '&eCreate a Party'
+    slot: 3
+    lore-enabled: true
+    lore:
+      - '&7Right Click to create a party'
+  LEADERBOARDS:
+    id: '65:0'
+    name: '&dView Leaderboards'
+    slot: 5
+    lore-enabled: true
+    lore:
+      - '&7Right Click to view top players'
+  SETTINGS:
+    id: '145:0'
+    name: '&bOpen Settings'
+    slot: 7
+    lore-enabled: true
+    lore:
+      - '&7Right Click to customize settings'
+  EDITKIT:
+    id: '340:0'
+    name: '&5Edit a Kit'
+    slot: 8
+    lore-enabled: true
+    lore:
+      - '&7Right Click to view edit a kit'
+  LEAVE_QUEUE:
+    id: '351:1'
+    name: '&cLeave Queue'
+    slot: 8
+    lore-enabled: true
+    lore:
+      - '&7Right Click to leave queue'
+  CUSTOM_KIT:
+    id: '403:0'
+    name: '&e%kit% &a#%number%'
+    slot: 0
+    lore-enabled: true
+    lore:
+      - '&7Right Click to activate custom kit'
+  DEFAULT_KIT:
+    id: '403:0'
+    name: '&eDefault Kit'
+    slot: 0
+    lore-enabled: true
+    lore:
+      - '&7Right Click to activate default kit'
+  PARTY_EVENTS:
+    id: '286:0'
+    name: '&6Start a Party Event'
+    slot: 0
+    lore-enabled: true
+    lore:
+      - '&7Right Click to open party event GUI'
+  HCF_SELECTOR:
+    id: '340:0'
+    name: '&aSelect HCF Kits'
+    slot: 1
+    lore-enabled: true
+    lore:
+      - '&7Right Click to open HCF kit selector GUI'
+  LEADER_PARTY_INFO:
+    id: '339:0'
+    name: '&2Party Info'
+    slot: 4
+    lore-enabled: true
+    lore:
+      - '&7Right Click to view party info'
+  PLAYER_PARTY_INFO:
+    id: '340:0'
+    name: '&2Party Info'
+    slot: 0
+    lore-enabled: true
+    lore:
+      - '&7Right Click to view party info'
+  DISBAND_PARTY:
+    id: '351:1'
+    name: '&cDisband Party'
+    slot: 8
+    lore-enabled: true
+    lore:
+      - '&7Right Click to disband party'
+  LEAVE_PARTY:
+    id: '351:1'
+    name: '&cLeave Party'
+    slot: 8
+    lore-enabled: true
+    lore:
+      - '&7Right Click to leave party'
+  LEAVE_EVENT:
+    id: '351:1'
+    name: '&cLeave Event'
+    slot: 8
+    lore-enabled: true
+    lore:
+      - '&7Right Click to leave the event'
+  LEAVE_TOURNAMENT:
+    id: '351:1'
+    name: '&cLeave Tournament'
+    slot: 8
+    lore-enabled: true
+    lore:
+      - '&7Right Click to leave the tournament'
+  STOP_SPECTATING:
+    id: '76:0'
+    name: '&cStop Spectating'
+    slot: 8
+    lore-enabled: true
+    lore:
+      - '&7Right Click to stop spectating'
+menus:
+  UNRANKED:
+    name: '&aJoin an Unranked Queue'
+    rows: 2
+    item-prefix: '&a'
+    item-lore:
+      - '&6&nUnranked Queue:'
+      - '&eIn queue: &a%queue%'
+      - '&eIn match: &a%match%'
+      - ''
+      - '&6Ranked Queue:'
+      - '&eIn queue: &a%rankedQueue%'
+      - '&eIn match: &a%rankedMatch%'
+      - ''
+      - '&eClick here to join the unranked queue for &a%kit%&e.'
+  RANKED:
+    name: '&bJoin an Ranked Queue'
+    rows: 2
+    item-prefix: '&b'
+    item-lore:
+      - '&6Unranked Queue:'
+      - '&eIn queue: &a%unrankedQueue%'
+      - '&eIn match: &a%unrankedMatch%'
+      - ''
+      - '&6&nRanked Queue:'
+      - '&eIn queue: &a%queue%'
+      - '&eIn match: &a%match%'
+      - ''
+      - '&eClick here to join the ranked queue for &b%kit%&e.'
+  EDITKIT:
+    name: '&5Edit a Kit'
+    rows: 2
+    item-prefix: '&5'
+    item-lore:
+      - '&eClick here to edit &5%kit%&e.'
+  PARTYFFA:
+    name: '&6Party FFA'
+    rows: 2
+    item-prefix: '&6'
+    item-lore:
+      - '&eClick here to start a &6%kit% &effa.'
+  PARTYSPLIT:
+    name: '&7Party Split'
+    rows: 2
+    item-prefix: '&7'
+    item-lore:
+      - '&eClick here to start a &7%kit% &esplit.'
+  DUEL:
+    name: '&3Select a Duel Kit'
+    rows: 2
+    item-prefix: '&3'
+    item-lore:
+      - '&eClick here to send a &3%kit% &eduel.'
+  TOURNAMENT:
+    name: '&9Select a Tournament Kit'
+    rows: 2
+    item-prefix: '&9'
+    item-lore:
+      - '&eClick here to start a &9%kit% &etournament.'
+  LEADERBOARDS:
+    name: '&bLeaderboards'
+    rows: 2
+    item-prefix: '&bTop 10 | '
+  SETTINGS:
+    name: '&6Settings'
+    item-prefix: ""
+    rows: 1
+    items:
+      toggle-pms:
+        id: 340
+        name: '&bToggle your private messages.'
+        command: '/tpm'
+      toggle-scoreboard:
+        id: 399
+        name: '&bToggle your scoreboard.'
+        command: '/tsb'
+      toggle-duels:
+        id: 276
+        name: '&bToggle your duels.'
+        command: '/tdr'
+  EDITLAYOUT:
+    name: '&eEditing Kit Layout'
+    items:
+      save-kit:
+        id: '54:0'
+        name: '&eSave Kit &a%kit% #%number%'
+      load-kit:
+        id: '340:0'
+        name: '&eLoad Kit &a%kit% #%number%'
+      rename-kit:
+        id: '421:0'
+        name: '&eRename Kit &a%kit% #%number%'
+      remove-kit:
+        id: '318:0'
+        name: '&eRemove Kit &a%kit% #%number%'
+  PARTYEVENTS:
+    name: '&6Start a Party Event'
+    rows: 3
+    items:
+      ffa:
+        id: '286:0'
+        name: '&6Party FFA'
+        slot: 11
+      split:
+        id: '267:0'
+        name: '&7Party Split'
+        slot: 13
+      duel:
+        id: '276:0'
+        name: '&aParty Duel'
+        slot: 15
+  OTHERPARTIES:
+    name: '&6Select Party'
+    rows: 3
+  MATCHES:
+    name: '&3Spectate Player'
+    rows: 4
+  PARTYDUEL:
+    name: '&6Start a Party Duel'
+    rows: 3
+    items:
+      regular:
+        id: '340:0'
+        name: '&6Select a Kit'
+        slot: 12
+      hcf:
+        id: '276:0'
+        name: '&7HCF Team Fight'
+        slot: 14
+  HCFKITS:
+    name: '&aSelect HCF Kits'
+    rows: 2
+    items:
+      player:
+        id: '397:0'
+        name: '&e%player% &6[&e%kit%&6]'
+  SNAPSHOT:
+    name: "&7Inventory of &6%player%"
+    items:
+      player:
+        id: '397:0'
+        slot: 48
+        name: "&eHealth: &c%health%/10"
+        lore:
+          - "&7%player%'s Health"
+      pots:
+        id: '373:16421'
+        slot: 50
+        name: "&a%potions% Potions"
+        lore:
+          - "&7%player%'s Potions"
+      stats:
+        id: '283:0'
+        slot: 49
+        name: "&eMatch Statistics"
+        lore:
+          - "&eHits: &6%hits%"
+          - "&eCombo: &6%combo%"
+          - "&eLongest Combo: &6%longestCombo%"
+          - "&ePotion accuracy: &6%accuracy%"
+      switch-inventory:
+        id: '69:0'
+        slot: 53
+        name: "&cChange Inventory"
+        lore:
+          - "&cChange Inventory"
+party-chat-format: '&d&l[P] %player%: &b%message%'
+leaderboards-lore: "&a#%pos%&e. &a%player% &e(&a%elo%&e)"
+settings:
+  default-elo: 1000
+  max-elo: 2500
+  min-elo: 0
+  max-party-members: 10
+  lightning-effect: true
+  delete-bottles: true
+  event-delay: 10
+  players-per-event: 30
+  players-per-tournament: 100
+  show-players: true
+  leaderboards-gui: true
+  settings-gui: true
+  void-spawn: true
+  hide-invisibles-in-tab: false
